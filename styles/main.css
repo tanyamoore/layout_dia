@@ -196,6 +196,11 @@ h1 {
   opacity: 0;
   outline: none; }
 
+@media screen and (min-width: 1600px) {
+  .nav {
+    width: 1400px;
+    margin: auto; } }
+
 body,
 html,
 ul,
@@ -253,6 +258,11 @@ body {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
+
+@media screen and (min-width: 1600px) {
+  .expertise__content {
+    width: 1400px;
+    margin: auto; } }
 
 .info {
   margin: 150px 25%;
@@ -570,6 +580,10 @@ body {
             align-items: center; }
   .person {
     width: 300px; } }
+
+@media screen and (min-width: 1600px) {
+  .testimonials {
+    width: 1400px; } }
 
 .footer {
   height: 890px;
