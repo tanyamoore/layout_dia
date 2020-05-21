@@ -224,7 +224,8 @@ html,
 body {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
 
 .expertise {
   padding: 10% 0;
@@ -875,8 +876,7 @@ body {
     width: 30vw;
     height: 100vh; }
     .vision__right .rectangle--big:first-child {
-      right: 5vw;
-      top: 0vh; }
+      right: 5vw; }
     .vision__right .rectangle--medium:nth-child(3) {
       top: 25vh;
       right: 25vw; }
