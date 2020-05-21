@@ -249,7 +249,7 @@ body {
   .expertise__name {
     font-size: 20px; }
   .expertise__text {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: normal;
     color: #6c788b; }
@@ -289,9 +289,11 @@ body {
 
 @media screen and (max-width: 950px) {
   .info {
-    margin: 10% 10px;
-    width: 100%;
-    text-align: center; } }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10% 10px;
+    text-align: center;
+    margin: 0; } }
 
 @media screen and (min-width: 1600px) {
   .info {
@@ -490,20 +492,28 @@ body {
     border-radius: 0;
     height: 1400px;
     width: 100%; }
+    .approach__content {
+      height: 650px; }
     .approach__image {
       display: none; }
     .approach__label {
       text-align: center; }
     .approach__name {
       text-align: center; }
+    .approach__round {
+      margin-bottom: 50px; }
+    .approach__description {
+      margin-bottom: 100px; }
     .approach__table {
       position: relative;
-      top: 10%; }
+      top: 10%;
+      margin-bottom: 100px; }
     .approach__block {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      text-align: center; } }
 
 .testimonials {
   width: 100%;
@@ -672,11 +682,11 @@ body {
     color: #fff;
     font-weight: 600;
     font-family: Poppins, Arial, sans-serif; }
-    .footer__input:focus {
-      border-bottom: 2px solid #fff; }
     .footer__input::-webkit-input-placeholder {
       color: #fff;
       opacity: 0.7; }
+    .footer__input:focus {
+      border-bottom: 2px solid #fff; }
   .footer__form {
     grid-area: send;
     position: relative;
@@ -769,8 +779,6 @@ body {
       margin-right: 0%; }
     .footer__item:last-child {
       margin-right: 0%; }
-    .footer__img {
-      margin-right: 0; }
     .footer__contact {
       display: -webkit-box;
       display: -ms-flexbox;
