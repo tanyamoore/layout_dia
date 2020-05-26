@@ -383,8 +383,15 @@ body {
     background-color: #fff;
     width: 64px;
     height: 64px;
-    display: inline-block;
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     line-height: 70px;
     border-radius: 50%;
     margin-right: 5%;
@@ -573,9 +580,11 @@ body {
   letter-spacing: 3px; }
 
 .nav__link {
-  color: #fff; }
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
   .nav__link:hover {
-    text-shadow: #fff 0 0 5px, #fff 0 0 10px, #fff 0 0 15px, #ff2d95 0 0 20px, #ff2d95 0 0 30px, #ff2d95 0 0 40px, #ff2d95 0 0 50px, #ff2d95 0 0 75px, -13px -15px 20px rgba(255, 204, 228, 0.05); }
+    opacity: 0.5; }
 
 .nav__item:first-child {
   margin-left: 10%; }
@@ -688,12 +697,15 @@ body {
     display: flex;
     color: #fff;
     font-weight: 600;
-    font-family: Poppins, Arial, sans-serif; }
+    outline: none;
+    font-family: Poppins, Arial, sans-serif;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
     .footer__input::-webkit-input-placeholder {
       color: #fff;
       opacity: 0.7; }
-    .footer__input:focus {
-      border-bottom: 2px solid #fff; }
+    .footer__input:focus, .footer__input:hover {
+      border-bottom: 1px solid #ff7e6c; }
   .footer__form {
     grid-area: send;
     position: relative;
@@ -717,9 +729,11 @@ body {
     font-weight: 600;
     font-size: 24px;
     line-height: 150%;
-    color: #fff; }
+    color: #fff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
     .footer__text:hover {
-      text-shadow: #fff 0 0 5px, #fff 0 0 10px, #fff 0 0 15px, #ff2d95 0 0 20px, #ff2d95 0 0 30px, #ff2d95 0 0 40px, #ff2d95 0 0 50px, #ff2d95 0 0 75px, -13px -15px 20px rgba(255, 204, 228, 0.05); }
+      opacity: 0.5; }
   .footer__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -738,9 +752,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 3px; }
   .footer__link {
-    color: #fff; }
+    color: #fff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
     .footer__link:hover {
-      text-shadow: #fff 0 0 5px, #fff 0 0 10px, #fff 0 0 15px, #ff2d95 0 0 20px, #ff2d95 0 0 30px, #ff2d95 0 0 40px, #ff2d95 0 0 50px, #ff2d95 0 0 75px, -13px -15px 20px rgba(255, 204, 228, 0.05); }
+      opacity: 0.5; }
   .footer__item:first-child {
     margin-left: 5%;
     margin-right: 20%; }
